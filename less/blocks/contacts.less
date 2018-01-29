@@ -1,5 +1,5 @@
 @import "mixins.less";
-/*mobile*/
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -20,9 +20,9 @@
 
 .contacts__wrapper {
   .container();
-  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .contacts__title {
@@ -47,9 +47,9 @@
     width: 185px;
     margin-bottom: 30px;
     margin-left: auto;
-    border-bottom: 1px solid #62d1ba;
+    border-bottom: 1px solid @base-color;
     &:hover {
-      color: #62d1ba;
+      color: @base-color;
     }
     &:active {
       opacity: 0.3;
@@ -73,7 +73,7 @@
 }
 
 .contacts__map iframe {
-  position:absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -85,7 +85,7 @@
   margin: 0 auto;
 }
 
-/*tablet*/
+
 @media @tablet-widths {
   .contacts {
     min-height: 805px;
@@ -206,5 +206,4 @@
     padding-left: 55px;
     margin-top: -53px;
   }
-
 }
