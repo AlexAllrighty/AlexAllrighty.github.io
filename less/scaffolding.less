@@ -2,11 +2,10 @@
 @import "variables.less";
 
 body {
-  /*background: url("../img/mishka-index-mobile.jpg") no-repeat 50% 0px;*/
+
   font-family: 'Open Sans';
   font-weight: normal;
   font-style: normal;
-  opacity: 1;
 }
 
 @font-face {
@@ -37,6 +36,11 @@ a {
 
 main, div, section, article, input, button, a, li, .btn {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -84,22 +88,7 @@ img {
 }
 
 @media @tablet-widths {
-  body {
-    /*background: url("../img/mishka-index-tablet.jpg") no-repeat 50% 0px;*/
-  }
-
   .btn {
     width: 230px;
   }
-}
-
-@media @desktop-widths {
-  body {
-    /*background: url("../img/mishka-index-desktop.jpg") no-repeat 50% 0px;*/
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
