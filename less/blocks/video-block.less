@@ -1,0 +1,141 @@
+@import "mixins.less";
+
+.video-block {
+  .container();
+  margin-bottom: 58px;
+}
+
+.video-block__wrapper {
+  position: relative;
+  min-height: 503px;
+  padding-top: 95px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/css_sprites.png') -201px -49px;
+  }
+}
+
+.video-block__link {
+  position: relative;
+  height: 150px;
+  .icon-play {
+    position: absolute;
+    top: 27%;
+    left: 30%;
+  }
+}
+
+.video-block__inner-wrapper {
+  padding-top: 16px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.video-block__title {
+  position: absolute;
+  top: 8px;
+  left: 90px;
+  width: 140px;
+  font-family: verdana;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.video-block__description {
+  margin-bottom: 25px;
+  font-family: "Open sans";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media @tablet-widths {
+  .video-block__wrapper {
+    min-height: 745px;
+    padding: 0;
+    &::before {
+      top: 488px;
+      left: 45px;
+    }
+  }
+
+  .video-block__link {
+    height: 455px;
+    .icon-play {
+      top: 43%;
+      left: 42%;
+    }
+  }
+
+  .video-block__inner-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+
+  .video-block__title {
+    position: static;
+    width: 275px;
+    margin-bottom: 35px;
+    margin-left: 70px;
+    font-size: 18px;
+  }
+
+  .video-block__description {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 33px;
+
+  }
+
+  .video-block__button {
+    width: 100%;
+  }
+}
+
+@media @desktop-widths {
+  .video-block {
+    margin-top: 52px;
+  }
+
+  .video-block__wrapper {
+    display: flex;
+    min-height: 455px;
+    &::before {
+      top: 42px;
+      left: 763px;
+    }
+  }
+
+  .video-block__link {
+    position: relative;
+    flex-shrink: 0;
+    width: 680px;
+    .icon-play {
+      top: 42%;
+      left: 44%;
+    }
+  }
+
+  .video-block__inner-wrapper {
+    flex-shrink: 1;
+    padding: 0;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 50px;
+  }
+
+  .video-block__title {
+    width: 160px;
+    margin-left: 0;
+  }
+
+  .video-block__description {
+    margin-bottom: 45px;
+  }
+}

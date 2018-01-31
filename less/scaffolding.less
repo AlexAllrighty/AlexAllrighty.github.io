@@ -2,7 +2,8 @@
 @import "variables.less";
 
 body {
-
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
   font-family: 'Open Sans';
   font-weight: normal;
   font-style: normal;
@@ -36,6 +37,10 @@ a {
 
 main, div, section, article, input, button, a, li, .btn {
   box-sizing: border-box;
+}
+
+button {
+  background-color: white;
 }
 
 img {
@@ -88,6 +93,13 @@ img {
 }
 
 @media @tablet-widths {
+
+  .btn {
+    width: 230px;
+  }
+}
+
+@media @desktop-widths {  
   .btn {
     width: 230px;
   }
